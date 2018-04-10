@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Jumia Clone</string>
+    <string name="phones_tablets"><![CDATA[Phones & Tablets]]></string>
+    <string name="home_office"><![CDATA[Home & Office]]></string>
+    <string name="health_beauty"><![CDATA[Health & Beauty]]></string>
+    <string name="all">All</string>
+    <string name="shoes">Shoes</string>
+    <string name="women">Women</string>
+    <string name="clothing">Clothing</string>
+    <string name="men">Men</string>
+    <string name="title">Jumia Express</string>
+</resources>
