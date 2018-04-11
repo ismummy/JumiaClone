@@ -13,7 +13,9 @@ import butterknife.OnClick;
 import ismummy.me.jumiaclone.R;
 import ismummy.me.jumiaclone.ui.adapters.MainActivityAdapter;
 import ismummy.me.jumiaclone.ui.base.BaseActivity;
+import ismummy.me.jumiaclone.ui.fragments.CartFragment;
 import ismummy.me.jumiaclone.ui.fragments.HomeFragment;
+import ismummy.me.jumiaclone.ui.fragments.SavedFragment;
 
 public class MainActivity extends BaseActivity {
 
@@ -50,8 +52,8 @@ public class MainActivity extends BaseActivity {
     private void setupViewPager() {
         adapter = new MainActivityAdapter(getSupportFragmentManager());
         adapter.addFragment(HomeFragment.newInstance());
-        adapter.addFragment(HomeFragment.newInstance());
-        adapter.addFragment(HomeFragment.newInstance());
+        adapter.addFragment(SavedFragment.newInstance());
+        adapter.addFragment(CartFragment.newInstance());
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_action_home);
@@ -60,47 +62,54 @@ public class MainActivity extends BaseActivity {
     }
 
     @OnClick(R.id.layout_drawer_travel)
-    void travelDrawerClicked(){
+    void travelDrawerClicked() {
         toast("Travel Drawer Clicked");
         mDrawerLayout.closeDrawers();
     }
+
     @OnClick(R.id.layout_drawer_food)
-    void foodDrawerClicked(){
+    void foodDrawerClicked() {
         toast("Food Drawer Clicked");
         mDrawerLayout.closeDrawers();
     }
+
     @OnClick(R.id.layout_drawer_deals)
-    void dealDrawerClicked()
-    {
+    void dealDrawerClicked() {
         toast("Deal Drawer Clicked");
         mDrawerLayout.closeDrawers();
     }
+
     @OnClick(R.id.layout_drawer_house)
-    void houseDrawerClicked(){
+    void houseDrawerClicked() {
         toast("House Drawer Clicked");
     }
+
     @OnClick(R.id.layout_drawer_car)
-    void carDrawerClicked()
-    {
+    void carDrawerClicked() {
         toast("Car Drawer Clicked");
         mDrawerLayout.closeDrawers();
     }
+
     @OnClick(R.id.layout_drawer_one)
-    void oneDrawerClicked()
-    {
+    void oneDrawerClicked() {
         toast("One Drawer Clicked");
         mDrawerLayout.closeDrawers();
     }
+
     @OnClick(R.id.layout_drawer_market)
-    void marketDrawerClicked()
-    {
+    void marketDrawerClicked() {
         toast("Market Drawer Clicked");
         mDrawerLayout.closeDrawers();
     }
+
     @OnClick(R.id.layout_drawer_flight)
-    void flightDrawerClicked()
-    {
+    void flightDrawerClicked() {
         toast("Fligh Drawer Clicked");
         mDrawerLayout.closeDrawers();
+    }
+
+    //method to move change the current page another page from other fragment
+    public void setViewPagerIndex(int viewPagerIndex) {
+        viewPager.setCurrentItem(viewPagerIndex);
     }
 }

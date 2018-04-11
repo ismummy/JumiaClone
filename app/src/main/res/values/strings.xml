@@ -41,4 +41,6 @@
     <string name="sell_on_jumia">Sell on Jumia</string>
     <string name="jumia_flight_new">Jumia Flight NEW!</string>
     <string name="shop_by_category">Shop by category</string>
+    <string name="you_have_no_items_in_the_cart">You have no items in the cart</string>
+    <string name="continue_shopping">CONTINUE SHOPPING</string>
 </resources>
