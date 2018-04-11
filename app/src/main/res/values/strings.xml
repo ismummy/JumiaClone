@@ -31,4 +31,14 @@
     <string name="baby">Baby</string>
     <string name="computing">Computing</string>
     <string name="electronics">Electronics</string>
+    <string name="our_services">Our services</string>
+    <string name="jumia_travel">Jumia Travel</string>
+    <string name="jumia_food">Jumia Food</string>
+    <string name="jumia_deals">Jumia Deals</string>
+    <string name="jumia_house">Jumia House</string>
+    <string name="jumia_car">Jumia Car</string>
+    <string name="jumia_one">Jumia One</string>
+    <string name="sell_on_jumia">Sell on Jumia</string>
+    <string name="jumia_flight_new">Jumia Flight NEW!</string>
+    <string name="shop_by_category">Shop by category</string>
 </resources>

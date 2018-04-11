@@ -9,6 +9,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
 
 import butterknife.BindView;
+import butterknife.OnClick;
 import ismummy.me.jumiaclone.R;
 import ismummy.me.jumiaclone.ui.adapters.MainActivityAdapter;
 import ismummy.me.jumiaclone.ui.base.BaseActivity;
@@ -56,5 +57,50 @@ public class MainActivity extends BaseActivity {
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_action_home);
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_action_saved);
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_action_cart);
+    }
+
+    @OnClick(R.id.layout_drawer_travel)
+    void travelDrawerClicked(){
+        toast("Travel Drawer Clicked");
+        mDrawerLayout.closeDrawers();
+    }
+    @OnClick(R.id.layout_drawer_food)
+    void foodDrawerClicked(){
+        toast("Food Drawer Clicked");
+        mDrawerLayout.closeDrawers();
+    }
+    @OnClick(R.id.layout_drawer_deals)
+    void dealDrawerClicked()
+    {
+        toast("Deal Drawer Clicked");
+        mDrawerLayout.closeDrawers();
+    }
+    @OnClick(R.id.layout_drawer_house)
+    void houseDrawerClicked(){
+        toast("House Drawer Clicked");
+    }
+    @OnClick(R.id.layout_drawer_car)
+    void carDrawerClicked()
+    {
+        toast("Car Drawer Clicked");
+        mDrawerLayout.closeDrawers();
+    }
+    @OnClick(R.id.layout_drawer_one)
+    void oneDrawerClicked()
+    {
+        toast("One Drawer Clicked");
+        mDrawerLayout.closeDrawers();
+    }
+    @OnClick(R.id.layout_drawer_market)
+    void marketDrawerClicked()
+    {
+        toast("Market Drawer Clicked");
+        mDrawerLayout.closeDrawers();
+    }
+    @OnClick(R.id.layout_drawer_flight)
+    void flightDrawerClicked()
+    {
+        toast("Fligh Drawer Clicked");
+        mDrawerLayout.closeDrawers();
     }
 }
