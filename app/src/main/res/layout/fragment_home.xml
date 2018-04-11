@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.HomeFragment">
+    tools:context=".ui.fragments.HomeFragment"
+    tools:ignore="ContentDescription">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,6 +13,7 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/iv_banner"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:scaleType="fitXY"
@@ -32,6 +34,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
+                    android:id="@+id/layout_express"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="6dp"
@@ -65,6 +68,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/layout_entertainment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="6dp"
@@ -78,7 +82,7 @@
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="Entertainment"
+                        android:text="@string/entertainment"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -86,7 +90,7 @@
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="Stay Tuned" />
+                        android:text="@string/stay_tuned" />
 
                     <ImageView
                         android:layout_width="100dp"
@@ -98,6 +102,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/layout_phones"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="6dp"
@@ -111,7 +116,7 @@
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="Phones"
+                        android:text="@string/phones"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -119,7 +124,7 @@
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="For All" />
+                        android:text="@string/for_all" />
 
                     <ImageView
                         android:layout_width="100dp"
@@ -131,6 +136,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/layout_power"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="6dp"
@@ -144,7 +150,7 @@
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="Power Up"
+                        android:text="@string/power_up"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -152,7 +158,7 @@
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="Your Kitchen" />
+                        android:text="@string/your_kitchen" />
 
                     <ImageView
                         android:layout_width="100dp"
@@ -166,6 +172,7 @@
         </HorizontalScrollView>
 
         <RelativeLayout
+            android:id="@+id/layout_deal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="2dp"
@@ -178,7 +185,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="120dp"
                 android:layout_marginRight="120dp"
-                android:text="Deals of The Day!"
+                android:text="@string/deals_of_the_day"
                 android:textAlignment="center"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -210,6 +217,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
+                    android:id="@+id/layout_hair"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="6dp"
@@ -223,7 +231,7 @@
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="Hair Extensions"
+                        android:text="@string/hair_extensions"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -231,7 +239,7 @@
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="Your Desire" />
+                        android:text="@string/your_desire" />
 
                     <ImageView
                         android:layout_width="100dp"
@@ -243,6 +251,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/layout_household"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="6dp"
@@ -256,7 +265,7 @@
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="Household"
+                        android:text="@string/household"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -264,7 +273,7 @@
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="Needs For You" />
+                        android:text="@string/needs_for_you" />
 
                     <ImageView
                         android:layout_width="100dp"
@@ -276,6 +285,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/layout_formen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="6dp"
@@ -289,7 +299,7 @@
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="For Men"
+                        android:text="@string/for_men"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -297,7 +307,7 @@
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="From #1,500" />
+                        android:text="@string/from_1_500" />
 
                     <ImageView
                         android:layout_width="100dp"
@@ -315,7 +325,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="SHOPS OF THE WEEK" />
+            android:text="@string/shops_of_the_week" />
 
         <HorizontalScrollView
             android:layout_width="match_parent"
@@ -332,6 +342,7 @@
                 android:padding="6dp">
 
                 <ImageView
+                    android:id="@+id/iv_hp_shop"
                     android:layout_width="76dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="4dp"
@@ -339,6 +350,7 @@
                     android:src="@drawable/hp" />
 
                 <ImageView
+                    android:id="@+id/iv_intel_shop"
                     android:layout_width="76dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="4dp"
@@ -346,6 +358,7 @@
                     android:src="@drawable/intel" />
 
                 <ImageView
+                    android:id="@+id/iv_molfix_shop"
                     android:layout_width="76dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="4dp"
@@ -353,6 +366,7 @@
                     android:src="@drawable/molfix" />
 
                 <ImageView
+                    android:id="@+id/iv_canon_shop"
                     android:layout_width="76dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="4dp"
@@ -360,6 +374,7 @@
                     android:src="@drawable/canon" />
 
                 <ImageView
+                    android:id="@+id/iv_infinix_shop"
                     android:layout_width="76dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="4dp"
@@ -367,6 +382,7 @@
                     android:src="@drawable/infinix" />
 
                 <ImageView
+                    android:id="@+id/iv_innjo_shop"
                     android:layout_width="76dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="4dp"
@@ -374,6 +390,7 @@
                     android:src="@drawable/innjo" />
 
                 <ImageView
+                    android:id="@+id/iv_tecno_shop"
                     android:layout_width="76dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="4dp"
@@ -390,6 +407,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/iv_home_deal"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_marginEnd="4dp"
@@ -399,6 +417,7 @@
                 android:src="@drawable/home" />
 
             <ImageView
+                android:id="@+id/iv_voucher_deal"
                 android:layout_width="0dp"
                 android:layout_height="150dp"
                 android:layout_marginLeft="4dp"
@@ -413,11 +432,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="FEATURED STORES" />
+            android:text="@string/featured_stores" />
 
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            tools:ignore="RelativeOverlap"
             android:shrinkColumns="*"
             android:stretchColumns="*">
 
@@ -427,6 +447,7 @@
                 android:layout_marginBottom="4dp">
 
                 <RelativeLayout
+                    android:id="@+id/layout_phones_store"
                     android:layout_marginEnd="2dp"
                     android:layout_marginRight="2dp"
                     android:background="@color/white"
@@ -441,7 +462,8 @@
                         android:ellipsize="end"
                         android:singleLine="true"
                         android:text="@string/phones_tablets"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/black"
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -458,6 +480,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/layout_baby_store"
                     android:layout_marginBottom="2dp"
                     android:layout_marginLeft="2dp"
                     android:layout_marginStart="2dp"
@@ -472,7 +495,7 @@
                         android:layout_marginRight="50dp"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="Baby"
+                        android:text="@string/baby"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -496,6 +519,7 @@
                 android:layout_marginBottom="4dp">
 
                 <RelativeLayout
+                    android:id="@+id/layout_computing_store"
                     android:layout_marginEnd="2dp"
                     android:layout_marginRight="2dp"
                     android:background="@color/white"
@@ -509,14 +533,14 @@
                         android:layout_marginRight="50dp"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="Computing"
+                        android:text="@string/computing"
                         android:textColor="@color/black" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/tv3"
-                        android:text="All" />
+                        android:text="@string/all" />
 
                     <ImageView
                         android:layout_width="50dp"
@@ -527,6 +551,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/layout_electronic_store"
                     android:layout_marginLeft="2dp"
                     android:layout_marginStart="2dp"
                     android:background="@color/white"
@@ -540,14 +565,14 @@
                         android:layout_marginRight="50dp"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="Electronics"
+                        android:text="@string/electronics"
                         android:textColor="@color/black" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/tv4"
-                        android:text="All" />
+                        android:text="@string/all" />
 
                     <ImageView
                         android:layout_width="50dp"
@@ -565,6 +590,7 @@
                 android:layout_marginBottom="4dp">
 
                 <RelativeLayout
+                    android:id="@+id/layout_home_store"
                     android:layout_marginEnd="2dp"
                     android:layout_marginRight="2dp"
                     android:background="@color/white"
@@ -596,6 +622,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/layout_men_clothing_store"
                     android:layout_marginLeft="2dp"
                     android:layout_marginStart="2dp"
                     android:background="@color/white"
@@ -635,6 +662,7 @@
                 android:orientation="vertical">
 
                 <RelativeLayout
+                    android:id="@+id/layout_women_clothing_store"
                     android:layout_marginEnd="2dp"
                     android:layout_marginRight="2dp"
                     android:background="@color/white"
@@ -649,14 +677,14 @@
                         android:layout_marginRight="50dp"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="Clothing"
+                        android:text="@string/clothing"
                         android:textColor="@color/black" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/tv7"
-                        android:text="Women" />
+                        android:text="@string/women" />
 
                     <ImageView
                         android:layout_width="50dp"
@@ -667,6 +695,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/layout_men_shoes_store"
                     android:layout_marginLeft="2dp"
                     android:layout_marginStart="2dp"
                     android:background="@color/white"
@@ -680,14 +709,14 @@
                         android:layout_marginRight="50dp"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="Shoes"
+                        android:text="@string/shoes"
                         android:textColor="@color/black" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/tv8"
-                        android:text="Men" />
+                        android:text="@string/men" />
 
                     <ImageView
                         android:layout_width="50dp"
@@ -704,6 +733,7 @@
                 android:layout_height="wrap_content">
 
                 <RelativeLayout
+                    android:id="@+id/layout_women_shoes_store"
                     android:layout_marginEnd="2dp"
                     android:layout_marginRight="2dp"
                     android:background="@color/white"
@@ -735,6 +765,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/layout_health_store"
                     android:layout_marginLeft="2dp"
                     android:layout_marginStart="2dp"
                     android:background="@color/white"
@@ -774,10 +805,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="TOP SELLERS" />
+            android:text="@string/top_sellers" />
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/item2"
+            android:id="@+id/rv_seller"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp" />
