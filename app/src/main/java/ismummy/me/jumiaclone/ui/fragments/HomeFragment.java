@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 import butterknife.OnClick;
 import ismummy.me.jumiaclone.R;
+import ismummy.me.jumiaclone.core.EndPoints;
 import ismummy.me.jumiaclone.ui.base.BaseFragment;
 
 /**
@@ -34,122 +35,122 @@ public class HomeFragment extends BaseFragment {
 
     @OnClick(R.id.iv_banner)
     void bannerClicked(){
-        toast("banner Clicked");
+        openInternalWebView(EndPoints.HOME_BANNER);
     }
     @OnClick(R.id.layout_express)
     void expressClicked(){
-        toast("Express clicked");
+        openInternalWebView(EndPoints.JUMIA_EXPRESS);
     }
 
     @OnClick(R.id.layout_entertainment)
     void entertainmentClicked()
     {
-        toast("entertainment Clicked");
+        openInternalWebView(EndPoints.JUMIA_ENTERTAINMENT);
     }
     @OnClick(R.id.layout_phones)
     void phonesClicked(){
-        toast("Phones CLicked");
+        openInternalWebView(EndPoints.JUMIA_PHONES);
     }
     @OnClick(R.id.layout_power)
     void powerClicked(){
-        toast("Powerup Clicked");
+        openInternalWebView(EndPoints.JUMIA_POWERUP);
     }
     @OnClick(R.id.layout_deal)
     void dealClicked(){
-        toast("Deals Clicked");
+        openInternalWebView(EndPoints.DEALS_OF_THE_DAY);
     }
     @OnClick(R.id.layout_hair)
     void hairClicked(){
-        toast("Hair Clicked");
+        openInternalWebView(EndPoints.JUMIA_HAIR);
     }
     @OnClick(R.id.layout_household)
     void householdClicked(){
-        toast("Household Clicked");
+        openInternalWebView(EndPoints.JUMIA_HOME);
     }
     @OnClick(R.id.layout_formen)
     void formenClicked()
     {
-        toast("For men Clicked");
+        openInternalWebView(EndPoints.JUMIA_FOR_MEN);
     }
     @OnClick(R.id.iv_hp_shop)
     void hpShopClicked(){
-        toast("Hp Shop Clicked");
+        openInternalWebView(EndPoints.JUMIA_HP);
     }
     @OnClick(R.id.iv_intel_shop)
     void intelShopClicked(){
-        toast("Intel Shop Clicked");
+        openInternalWebView(EndPoints.JUMIA_INTEL);
     }
     @OnClick(R.id.iv_molfix_shop)
     void molfixShopClicked(){
-        toast("Molfix Shop Clicked");
+        openInternalWebView(EndPoints.JUMIA_MOLFIX);
     }
     @OnClick(R.id.iv_canon_shop)
     void canonShopClicked(){
-        toast("Canon shop clicked");
+        openInternalWebView(EndPoints.JUMIA_CANON);
     }
     @OnClick(R.id.iv_infinix_shop)
     void infinixShopClicked(){
-        toast("Infinix Shop Clicked");
+        openInternalWebView(EndPoints.JUMIA_INFINIX);
     }
     @OnClick(R.id.iv_innjo_shop)
     void innjoShopClicked(){
-        toast("Innjo Shop Clicked");
+        openInternalWebView(EndPoints.JUMIA_INNJOO);
     }
     @OnClick(R.id.iv_tecno_shop)
     void tecnoShopClicked(){
-        toast("Tecno Shop Clicked");
+        openInternalWebView(EndPoints.JUMIA_TECNO);
     }
     @OnClick(R.id.iv_home_deal)
     void homeDealClicked(){
-        toast("Home Deal Clicked");
+        openInternalWebView(EndPoints.JUMIA_HOME_DEAL);
     }
     @OnClick(R.id.iv_voucher_deal)
     void voucherDealClicked()
     {
-        toast("Voucher Deal Clicked");
+        openInternalWebView(EndPoints.JUMIA_VOUCHER_DEAL);
     }
 
     @OnClick(R.id.layout_phones_store)
     void phonesStoreClicked(){
-        toast("phones Stores Clicked");
+        openInternalWebView(EndPoints.JUMIA_STORE_PHONES);
     }
     @OnClick(R.id.layout_baby_store)
     void babyStoreClicked(){
-        toast("Baby Store Clicked");
+        openInternalWebView(EndPoints.JUMIA_STORE_BABY);
     }
     @OnClick(R.id.layout_computing_store)
     void computingStoreClicked()
     {
-        toast("Computing Store Clicked");
+        openInternalWebView(EndPoints.JUMIA_STORE_COMPUTING);
     }
     @OnClick(R.id.layout_electronic_store)
     void electronicStoreClicked(){
-        toast("Electronic Store Clicked");
+        openInternalWebView(EndPoints.JUMIA_STORE_ELECTRONICS);
     }
     @OnClick(R.id.layout_home_store)
     void homeStoreClicked(){
-        toast("Home and Office Store Clicked");
+        openInternalWebView(EndPoints.JUMIA_STORE_HOME);
     }
     @OnClick(R.id.layout_men_clothing_store)
     void menClothingStoreClicked()
     {
-        toast("Men Clothing Store Clicked");
+        openInternalWebView(EndPoints.JUMIA_STORE_MEN_CLOTHING);
     }
     @OnClick(R.id.layout_women_clothing_store)
     void womenClothingStoreClicked()
     {
-        toast("Women Clothing Store Clicked");
+        openInternalWebView(EndPoints.JUMIA_STORE_WOMEN_CLOTHING);
     }
     @OnClick(R.id.layout_men_shoes_store)
     void menShoesStoreClicked(){
-        toast("Men Shoes Store Clicked");
+        openInternalWebView(EndPoints.JUMIA_STORE_MEN_SHOES);
     }
     @OnClick(R.id.layout_women_shoes_store)
     void womenShoesStoreClicked(){
-        toast("Women Shoes Store Clicked");
+        openInternalWebView(EndPoints.JUMIA_STORE_WOMEN_SHOES);
     }
     @OnClick(R.id.layout_health_store)
     void healthStoreClicked(){
-        toast("Health and Beauty Store Clicked");
+        openInternalWebView(EndPoints.JUMIA_STORE_BEAUTY);
     }
 }

@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.thefinestartist.finestwebview.FinestWebView;
+
 import butterknife.ButterKnife;
 import ismummy.me.jumiaclone.listeners.FragmentLifeCycle;
 
@@ -51,18 +53,6 @@ public abstract class BaseFragment extends Fragment implements FragmentLifeCycle
         Toast.makeText(getActivity(), message, Toast.LENGTH_LONG).show();
     }
 
-    protected void toastNetwork() {
-        if (!isOn || isDetached())
-            return;
-        toast("Check your internet connection and Try again!!!");
-    }
-
-    protected void toastConnectionFailure() {
-        if (!isOn || isDetached())
-        return;
-        toast("Error response from remote server. Please retry!!!");
-    }
-
     @Override
     public void onPauseFragment() {
         //Util.hideKeyboard(getActivity());
@@ -73,4 +63,7 @@ public abstract class BaseFragment extends Fragment implements FragmentLifeCycle
 
     }
 
+    protected void openInternalWebView(String endPoint){
+        new FinestWebView.Builder(this.getActivity()).show(endPoint);
+    }
 }

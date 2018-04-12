@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.thefinestartist.finestwebview.FinestWebView;
+
 import butterknife.ButterKnife;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
@@ -66,5 +68,9 @@ public abstract class BaseActivity extends AppCompatActivity {
             return;
 
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+    }
+
+    protected void openInternalWebView(String endPoint){
+        new FinestWebView.Builder(this).show(endPoint);
     }
 }
